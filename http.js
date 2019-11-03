@@ -8,13 +8,14 @@ const sleep = async ms => {
     });
 };
 
+// server.timeout = 0;
 server.on('request', async function(req, res) {
-    console.log('リクエストが来た');
-    await sleep(3000);
+    // console.log('リクエストが来た');
+    // await sleep(3000);
     res.writeHead(200, {'Content-Type' : 'text/plain'});
-    res.write('hello world');
+    res.write('Hello');
     res.end();
-    console.log('レスポンス返す');
+    // console.log('レスポンス返す');
 });
 
 server.listen(3000);

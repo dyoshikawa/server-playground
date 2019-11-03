@@ -17,7 +17,7 @@ loop do
   client.puts 'HTTP/1.0 200 OK'
   client.puts 'Content-Type: text/plain'
   client.puts
-  client.puts 'message body'
+  client.puts 'Hello'
   client.close
 end
 
