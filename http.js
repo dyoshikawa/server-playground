@@ -8,12 +8,6 @@ const sleep = async ms => {
     });
 };
 
-// (async () => {
-//     console.log('t');
-//     await sleep(3000);
-//     console.log('u');
-// })();
-
 server.on('request', async function(req, res) {
     console.log('リクエストが来た');
     await sleep(3000);
@@ -23,7 +17,4 @@ server.on('request', async function(req, res) {
     console.log('レスポンス返す');
 });
 
-// サーバを待ち受け状態にする
-// 第1引数: ポート番号
-// 第2引数: IPアドレス
 server.listen(3000);

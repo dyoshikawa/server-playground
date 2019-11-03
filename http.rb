@@ -14,10 +14,10 @@ loop do
 
   sleep 3
 
-  client.puts "HTTP/1.0 200 OK"
-  client.puts "Content-Type: text/plain"
+  client.puts 'HTTP/1.0 200 OK'
+  client.puts 'Content-Type: text/plain'
   client.puts
-  client.puts "message body"
+  client.puts 'message body'
   client.close
 end
 
