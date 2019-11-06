@@ -6,7 +6,7 @@ const callServer = async () => (await fetch('http://localhost:3000', { timeout: 
 
 (async () => {
     const promises = [];
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 100; i++) {
         promises.push(callServer());
     }
     const result = await Promise.all(promises)
