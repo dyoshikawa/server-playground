@@ -1,4 +1,3 @@
-// nodeのコアモジュールのhttpを使う
 const http = require('http');
 const server = http.createServer();
 
@@ -8,7 +7,6 @@ const sleep = async ms => {
     });
 };
 
-// server.timeout = 0;
 server.on('request', async function(req, res) {
     await sleep(3000);
     res.writeHead(200, {'Content-Type' : 'text/plain'});
